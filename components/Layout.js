@@ -8,13 +8,16 @@ const layoutStyle = {
     border: '1px solid #DDD'
 };
 
-// return an anonymous function object
-const Layout = props => (
-    <div style={layoutStyle}>
-        <Header />
-        {/* rendering Child Components */}
-        {props.children}
-    </div>
-);
+// Layout as a Higher Order Component
 
-export default Layout;
+const withLayout = function(Page) {
+    // return an anonymous function object
+    return () => (
+        <div style={layoutStyle}>
+            <Header />
+            <Page />
+        </div>
+    );
+};
+
+export default withLayout;
