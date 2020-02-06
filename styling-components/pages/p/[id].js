@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 
-const Post = props => {
+const Post = () => {
     const router = useRouter();
     
     return (
