@@ -24,3 +24,21 @@ It also supports having constraints inside styled-jsx. In the future, you will b
 In that case, you need to style the child component directly.
 
 Otherwise, you could use [global selectors](https://github.com/zeit/styled-jsx#one-off-global-selectors).
+
+## Global Styles
+
+Sometimes, we do need to change styles inside of a child component.
+
+Global Styles Work
+Yep that worked well. It worked, because our styles applied globally.
+
+While this feature can be incredibly handy, we always recommend trying to write scoped styles (without the global prop).
+
+Still, this is a great solution over normal style tags. With styled-jsx all necessary prefixing and CSS validation is done inside a babel plugin, so there is no additional runtime overhead.
+
+## What Next
+
+We have just scratched the surface with styled-jsx here, and there is a lot more that you can do. Refer to the [styled-jsx](https://github.com/zeit/styled-jsx) GitHub repo for more info.
+
+There are a number of [other styling solutions](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) for Next.js that are
+pretty good, so have a look at them too.
